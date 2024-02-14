@@ -3,48 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="asset/style/main.css">
+    <link rel="stylesheet" href="asset/style/slider.css">
     <title>Dia das Mulheres</title>
 </head>
 <body>
-    <main>
-        <section>
-
-            <div>
-                <img src="asset/img/logo.png" alt="Logo da empresa Miriam Momesso">
-            </div>
-            <div>
-                <h1>Título</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, perspiciatis repellendus possimus amet ipsum aliquid. Delectus recusandae praesentium accusantium neque dolorum? Vero suscipit cum reiciendis deserunt at. Fuga, nostrum esse.
-                Recusandae saepe, inventore sint alias eum reprehenderit aliquam quo! At suscipit cum nisi voluptas laudantium iure, quis deserunt accusantium possimus iste eligendi, ex et quaerat! Officiis adipisci consectetur similique quaerat.</p>
-            </div>
+    <main class="container-wrapper">
+        <!-- Início da primeira página -->
+        <section class="container-first-page">
+            <!-- Ínicio do painel com logo e informações extra, talvez eu mude de section para iside -->
+            <section class="left-pinel-container">
+                <div class="left-pinel-logo-mm">
+                    <img src="asset/img/logo.png" alt="Logo da empresa Miriam Momesso">
+                </div>
+                <div class="left-pinel-information">
+                    <h1>Título</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, perspiciatis repellendus possimus amet ipsum aliquid. Delectus recusandae praesentium accusantium neque dolorum? Vero suscipit cum reiciendis deserunt at. Fuga, nostrum esse.
+                    Recusandae saepe, inventore sint alias eum reprehenderit aliquam quo! At suscipit cum nisi voluptas laudantium iure, quis deserunt accusantium possimus iste eligendi, ex et quaerat! Officiis adipisci consectetur similique quaerat.</p>
+                </div>
             
-        </section>
-        <section class="sliderBox"><!--Dentro dessa caixa está o slider e o vídeo que sobrepõe o slider-->
+            </section>
+
+            <!-- Início do slider -->
+            <section class="sliderBox"><!--Dentro dessa caixa está o slider e o vídeo que sobrepõe o slider-->
             
-            <div class="btnPrev">
-                <!-- seta esquerda -->
-            </div>
-            <div class="btnPrev">
-                <!-- seta direita -->
-            </div>
+                <div class="slider-video-container">
+                    <div class="slider">
+            
+                        <button id="previousButton" class="setas previous-button fa-solid fa-chevron-left"></button>
+                        <button id="nextButton" class="setas next-button fa-solid fa-chevron-right"></button>
+            
+                        <div id="slideBox" class="slide-container">
+                            <img class="slide-item" data-slide="imagens-slide" src="/asset/img/foto-principal-paisagem.jpg" alt="bolsas da miriam momesso">
+                            <img class="slide-item" data-slide="imagens-slide" src="/asset/img/foto-paisagem-bolsa-pg.jpg" alt="bolsas da miriam momesso">
+                            <img class="slide-item" data-slide="imagens-slide" src="/asset/img/foto-paisagem-bolsa-piquenique.jpg" alt="bolsas da miriam momesso">
+                        </div>
+            
+                        <div id="indicatorButton" class="button-indicator-container">
+                            <button class="indicator-item fa-solid fa-circle"  data-slide="0"></button>
+                            <button class="indicator-item fa-solid fa-circle" data-slide="1"></button>
+                            <button class="indicator-item fa-solid fa-circle" data-slide="2"></button>
+                        </div>
+                    </div>
+            
+                    <div class="video-container">
+                        <video src="/asset/video/Composição 2.mp4" controls autoplay loop></video>
+                    </div>
+                </div>
+            </section>
 
-            <div class="sliders"> <!--Caixa com os slide-->
-                <img src="asset/img/foto-principal-paisagem.jpg" alt="Um quite de peças para piquenique em uma floresta e ao fundo existe um lindo lago">
-                <img src="asset/img/foto-paisagem-bolsa-piquenique.jpg" alt="uma mão feminina pegando uma garrafa em uma bolsa sobre uma mesa em uma mata, aparenta ser um piquenique">
-                <img src="asset/img/foto-paisagem-bolsa-pg.jpg" alt="Uma Bolsa sobre uma mesa em uma mata, aparenta ser um piquenique">
-            </div>
-           
-            <div class="btnControleSliders">
-                <button>0</button>
-                <button>0</button>
-                <button>0</button>
-            </div>
+            <!-- Início da chamada para ação -->
+            <section class="call-for-action">
+                <div class="content-action">
+                    <div class="information-content-action">
+                        <h3>Sugestão de brindes</h3>
+                        <h2>Dia das Mães</h2>
+                        <a href="#">solicite um orçamento</a>
+                    </div>
 
-            <video autoplay loop src="asset/video/Composição 2.mp4"></video>
+                    <div class="social-midia-call-for-action">
+                        <button class="fa-solid fa-globe"></button>
+                        <button class="fa-brands fa-instagram"></button>
+                    </div>
+                </div>
+            </section>
+        </section>  <!-- Fim da primeira página -->
 
-        </section>
     </main>
+
+    <script src="asset/script/slide.js"></script>
     
 </body>
 </html>

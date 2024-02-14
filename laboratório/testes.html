@@ -3,15 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="testes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Laboratório</title>
 </head>
 <body>
 
+<div class="slider-video-container">
+    <div class="slider">
+        
+        <button class="setas previous-button fa-solid fa-chevron-left"></button>
+        <button class="setas next-button fa-solid fa-chevron-right"></button> 
+
+        <div class="slide-container">
+            <img class="slide-item" data-slide="imagens-slide" src="/asset/img/foto-principal-paisagem.jpg" alt="bolsas da miriam momesso">
+            <img class="slide-item" data-slide="imagens-slide" src="/asset/img/foto-paisagem-bolsa-pg.jpg" alt="bolsas da miriam momesso">
+            <img class="slide-item" data-slide="imagens-slide" src="/asset/img/foto-paisagem-bolsa-piquenique.jpg" alt="bolsas da miriam momesso">
+        </div>
+
+        <div class="button-indicator-container">
+            <button class="indicator-item fa-solid fa-circle"  data-slide-to="0"></button>
+            <button class="indicator-item fa-solid fa-circle" data-slide-to="1"></button>
+            <button class="indicator-item fa-solid fa-circle" data-slide-to="2"></button>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <video src="/asset/video/Composição 2.mp4" autoplay loop ></video>
+    </div>
+</div>
+
+
+
+
+
+
+    <!--
+        
+        
     <button id="btn">
         mostrar
     </button>
 
-    <!-- A tag dialog é especial para criar um modal de forma mais prática, por padrão ela não é impressa na tela, somente com o atributo open é que ela é impressa -->
+    A tag dialog é especial para criar um modal de forma mais prática, por padrão ela não é impressa na tela, somente com o atributo open é que ela é impressa
    
         <dialog id="modal" >
             <h1>Modal</h1>
@@ -22,6 +56,7 @@
             Eos, similique harum deleniti blanditiis voluptas autem earum minima animi velit sapiente dolorem inventore mollitia. Id, illum error quo cupiditate ipsum ex odit veritatis expedita quisquam ducimus voluptates doloribus dolores?</p>
             <button id="btnClose">fechar</button>
         </dialog>
+-->
 
         <script src="teste.js"></script>
     
