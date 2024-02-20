@@ -1,0 +1,124 @@
+.container-fourth-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/asset/img/background/03.jpg);
+    overflow: hidden;
+}
+
+.content-fourth-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg, #f066b609, rgba(255, 255, 255, 0.219) );
+    height: 80%;
+    width: 80%;
+    padding: 3rem;
+    border-radius: 50px;
+    overflow: hidden;
+    border: solid #ffffff4b 2px;
+    border-image-slice: 1;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 0px 10px #00000034;
+}
+
+.info-fourth-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    width: 33%;
+    height: 100%;
+    gap: 1rem;
+    color: var(--clean-color);
+}
+
+.info-fourth-page h2{
+    font-family: var(--font-general);
+    font-size: 6rem;
+    color: var(--main-color);
+    line-height: 90px;
+    text-transform: uppercase;
+}
+
+.info-fourth-page h3{
+    font-family: var(--font-general);
+    font-size: 3rem;
+    color: var(--third-color);
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.img-fourth-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.img-fourth-page:hover{
+    scale: 103%;
+    transition: .3s;
+}
+
+.img-fourth-page img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.call-for-action-fourth-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    width: 50%;
+    height: 100%;
+    gap: 1rem;
+    color: var(--clean-color);
+}
+
+
+.call-for-action-fourth-page h2{
+    font-family: var(--font-general);
+    font-size: 6rem;
+    color: var(--main-color);
+    line-height: 90px;
+    text-transform: uppercase;
+}
+
+.call-for-action-fourth-page  p {
+    font-family: var(--font-general);
+    font-size: 1.5rem;
+    color: var(--clean-color);
+}
+
+.destaque {
+    color: var(--main-color);
+}
+
+.call-for-action-fourth-page button {
+    display: block;
+    width: 50%;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--third-color-special);
+    font-family: var(--font-general);
+    font-size: 1rem;
+    color: #fff8f0;
+    padding: 1rem;
+    border-radius: 2rem;
+    transition: 0.3s;
+    border: none;
+    transition: .3s;
+}
+
+.call-for-action-fourth-page button:hover{
+    background-color: var(--main-color);
+}

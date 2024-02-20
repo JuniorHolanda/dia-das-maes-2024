@@ -1,0 +1,126 @@
+.container-third-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/asset/img/background/02.jpg);
+    overflow: hidden;
+}
+
+.content-third-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg, #f066b609, rgba(255, 255, 255, 0.219) );
+    height: 80%;
+    width: 80%;
+    padding: 3rem;
+    gap: 3rem;
+    border-radius: 50px;
+    overflow: hidden;
+    border: solid #ffffff4b 2px;
+    border-image-slice: 1;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 0px 10px #00000034;
+}
+
+.info-third-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    width: 40%;
+    height: 100%;
+    gap: 1rem;
+    color: var(--clean-color);
+}
+
+.info-third-page h2{
+    font-family: var(--font-general);
+    font-size: 6rem;
+    color: var(--clean-color);
+    line-height: 90px;
+    text-transform: uppercase;
+}
+
+.info-third-page h3 {
+    font-family: var(--font-special);
+    font-size: 2rem;
+    color: var(--clean-color);
+    font-weight: 200;
+}
+
+
+
+.info-third-page p {
+    font-family: var(--font-general);
+    font-size: 1.5rem;
+    color: var(--clean-color);
+}
+
+.info-third-page button {
+    display: block;
+    width: 50%;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--third-color-special);
+    font-family: var(--font-general);
+    font-size: 1rem;
+    color: #fff8f0;
+    padding: 1rem;
+    border-radius: 2rem;
+    transition: 0.3s;
+    border: none;
+    transition: .3s;
+}
+
+.info-third-page button:hover{
+    background-color: var(--main-color);
+    transition: .3s;
+}
+
+.image-third-page{
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.first-image-third-page{
+    position: absolute;
+    width: 20vw;
+    top: 5rem;
+    left: 3rem;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.first-image-third-page:hover{
+    scale: 103%;
+    transition: .3s;
+}
+
+.second-image-third-page{
+    position: absolute; 
+    width: 20vw;
+    bottom: 5rem;
+    right: 3rem;   
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.second-image-third-page:hover{
+    scale: 103%;
+    transition: .3s;
+}
+
+.arrow-third-page {
+    position: absolute;
+    top:55%;
+    left: 14%;
+    width: 20%;
+}
+

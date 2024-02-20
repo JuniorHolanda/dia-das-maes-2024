@@ -35,15 +35,53 @@
 
 body {
     display: flex;
+    flex-direction: column;
+    position: relative;
     justify-content: center;
     align-items: center;
     width: 100vw;
     background-color: #a0a0a0;
+
 }
+
+/* Esse estilo afeta todos os preços em todas as páginas */
+.preco{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+
+/* Início do botão fixo de contato */
+
+.whatsapp-fixed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: fixed;
+    top: 85vh;
+    right: 3vw;
+    width: 60px;
+    height: 60px;
+    color: var(--second-color);
+    background-color:var(--main-color);
+    border: none;
+    padding: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 3;
+    transition: .3s;
+    box-shadow: 0px 0px 10px #00000052;
+}
+
+.whatsapp-fixed:hover {
+    color: var(--clean-color);
+    transition: .3s;
+    background-color: var(--main-color);
+} /* fim do botão fixo */
 
 .container-wrapper {
     display: flex;
-    border: solid;
     flex-direction: column;
     align-items: center;
 }
@@ -63,7 +101,7 @@ body {
 
 .content-first-page{
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 2.5fr 1.5fr;
     height: 80%;
     width: 80%;
     border-radius: 50px;
@@ -189,11 +227,12 @@ body {
     font-size: 2rem;
     color: var(--third-color);
     cursor: pointer;
-    
+    transition: .3s; 
 }
 
 .social-midia-call-for-action button:hover {
     color: var(--main-color);
+    transition: .3s;
 }
 
 
@@ -201,4 +240,3 @@ body {
 .social-midia-call-for-action button:nth-child(1) {
     font-size: 1.8rem;
 }
-
