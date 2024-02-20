@@ -14,8 +14,8 @@
     justify-content: center;
     align-items: center;
     height: 80%;
-    width: 80%;
-    padding: 3rem;
+    width: 94%;
+    padding: 1rem;
     border-radius: 50px;
     overflow: hidden;
     border: solid #ffffff4b 2px;
@@ -29,43 +29,43 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3rem;
-    width: 40%;
+    width: 30%;
     height: 100%;
+    text-align: right;
 
 }
 .info-second-page h2{
     font-family: var(--font-general);
-    font-size: 5em;
+    font-size: 3em;
     color: var(--clean-color);
-    padding: 3rem 3rem 0 3rem;
     margin: 0;
     padding: 0;
-    line-height: 90px;
-    text-transform: uppercase;
+    line-height: 40px;
+
 }
 
 
 .info-second-page p{
     font-family: var(--font-general);
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--clean-color);
-    width: 70%;
+    width: 100%;
     z-index: 2;
 }
 
 .cards-second-page {
     display: flex;
-    width: 60%;
+    width: 90%;
     z-index: 1;
-    height: 90%;
+    height: 80%;
+
 }
 
 .card-item-second-page{
     display: flex;
     width: 33%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: .5rem;
     z-index: 1;
@@ -73,11 +73,14 @@
 
 }
 .image-second-page{
+    display: flex;
     border-radius: 10px;
     overflow: hidden;
-    width: 2;
+    width: 100%;
     transition: 0.3s;
     cursor: pointer;
+    min-width: 167px;
+    max-width: 220px ;
 }
 .cards-second-page img {
     display: flex;
@@ -85,6 +88,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    object-fit: cover;
 }
 
 .cards-second-page img:hover{
@@ -100,7 +104,7 @@
 
 .title-card-second-page {
     font-family: var(--font-special);
-    font-size: 1.6rem;
+    font-size: 1.rem;
     font-weight: 100;
     color: var(--clean-color);
 
@@ -115,7 +119,7 @@
     font-family: var(--font-general);
     font-size: 1rem;
     color: #fff8f0;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 2rem;
     transition: 0.3s;
     border: none;
@@ -138,7 +142,7 @@
 
 /*------------------------------------------------- Media Querie -------------------------------------------*/
 
-@media (max-width: 1590px) {
+@media (max-width: 999px) {
 
     .info-second-page h2{
         font-size: 2.5rem;
