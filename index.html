@@ -6,69 +6,99 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="asset/style/main.css">
     <link rel="stylesheet" href="asset/style/slider.css">
+    <link rel="stylesheet" href="asset/style/second-page.css">
     <title>Dia das Mulheres</title>
 </head>
 <body>
     <main class="container-wrapper">
-        <!-- Início da primeira página -->
-        <section class="container-first-page">
-            <!-- Ínicio do painel com logo e informações extra, talvez eu mude de section para iside -->
-            <section class="left-pinel-container">
-                <div class="left-pinel-logo-mm">
-                    <img src="asset/img/logo.png" alt="Logo da empresa Miriam Momesso">
-                </div>
-                <div class="left-pinel-information">
-                    <h1>Título</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, perspiciatis repellendus possimus amet ipsum aliquid. Delectus recusandae praesentium accusantium neque dolorum? Vero suscipit cum reiciendis deserunt at. Fuga, nostrum esse.
-                    Recusandae saepe, inventore sint alias eum reprehenderit aliquam quo! At suscipit cum nisi voluptas laudantium iure, quis deserunt accusantium possimus iste eligendi, ex et quaerat! Officiis adipisci consectetur similique quaerat.</p>
-                </div>
-            
-            </section>
 
-            <!-- Início do slider -->
-            <section class="sliderBox"><!--Dentro dessa caixa está o slider e o vídeo que sobrepõe o slider-->
+        <!-- --------------------------------Início da primeira página ------------------------------------->
+        <section class="containner-first-page">
+            <section class="content-first-page">
+
+                <section class="left-pinel-container">
+                        <img class="logo-mm" src="asset/img/logo.png" alt="Logo da empresa Miriam Momesso">
+                        <h1>Mais que um brinde</h1>
+                        <p>Sua marca presente em momentos especiais,<br> criando e fortalecendo <strong class="conxao-duradoura">conexões duradouras</strong> com seus clientes.</p>
+                </section>
+
+                <!-- Início do slider -->
+                <section class="sliderBox">
             
-                <div class="slider-video-container">
-                    <div class="slider">
+                    <div class="slider-video-container">
+
+                        <div class="slider">
             
-                        <button id="previousButton" class="setas previous-button fa-solid fa-chevron-left"></button>
-                        <button id="nextButton" class="setas next-button fa-solid fa-chevron-right"></button>
+                            <button id="previousButton" class="setas previous-button fa-solid fa-chevron-left"></button>
+                            <button id="nextButton" class="setas next-button fa-solid fa-chevron-right"></button>
             
-                        <div id="slideBox" class="slide-container">
-                            <img class="slide-item" data-slide="imagens-slide" src="/asset/img/foto-principal-paisagem.jpg" alt="bolsas da miriam momesso">
-                            <img class="slide-item" data-slide="imagens-slide" src="/asset/img/foto-paisagem-bolsa-pg.jpg" alt="bolsas da miriam momesso">
-                            <img class="slide-item" data-slide="imagens-slide" src="/asset/img/foto-paisagem-bolsa-piquenique.jpg" alt="bolsas da miriam momesso">
+                            <div id="slideBox" class="slide-container">
+                                <img class="slide-item" data-slide="imagens-slide" src="/asset/img/foto-principal-paisagem.jpg" alt="bolsas da miriam momesso">
+                                <img class="slide-item" data-slide="imagens-slide" src="/asset/img/foto-paisagem-bolsa-pg.jpg" alt="bolsas da miriam momesso">
+                                <img class="slide-item" data-slide="imagens-slide" src="/asset/img/foto-paisagem-bolsa-piquenique.jpg" alt="bolsas da miriam momesso">
+                            </div>
+            
+                            <div id="indicatorButton" class="button-indicator-container">
+                                <button class="indicator-item fa-solid fa-circle"  data-slide="0"></button>
+                                <button class="indicator-item fa-solid fa-circle" data-slide="1"></button>
+                                <button class="indicator-item fa-solid fa-circle" data-slide="2"></button>
+                            </div>
                         </div>
             
-                        <div id="indicatorButton" class="button-indicator-container">
-                            <button class="indicator-item fa-solid fa-circle"  data-slide="0"></button>
-                            <button class="indicator-item fa-solid fa-circle" data-slide="1"></button>
-                            <button class="indicator-item fa-solid fa-circle" data-slide="2"></button>
+                        <div class="video-container">
+                            <video src="/asset/video/Composição 2.mp4" autoplay loop></video>
+                        </div>
+
+                    </div>
+                </section> <!--fim do slider-->
+
+                <!-- Início da chamada para ação -->
+                <section class="call-for-action">
+                    <div class="content-action">
+                        <div class="information-content-action">
+                            <h3>Sugestão de brindes</h3>
+                            <h2>Dia das Mães</h2>
+                            <a href="#">solicite um orçamento</a>
+                        </div>
+                        <div class="social-midia-call-for-action">
+                            <button class="fa-solid fa-globe"></button>
+                            <button class="fa-brands fa-instagram"></button>
                         </div>
                     </div>
-            
-                    <div class="video-container">
-                        <video src="/asset/video/Composição 2.mp4" controls autoplay loop></video>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Início da chamada para ação -->
-            <section class="call-for-action">
-                <div class="content-action">
-                    <div class="information-content-action">
-                        <h3>Sugestão de brindes</h3>
-                        <h2>Dia das Mães</h2>
-                        <a href="#">solicite um orçamento</a>
-                    </div>
-
-                    <div class="social-midia-call-for-action">
-                        <button class="fa-solid fa-globe"></button>
-                        <button class="fa-brands fa-instagram"></button>
-                    </div>
-                </div>
+                </section>
             </section>
         </section>  <!-- Fim da primeira página -->
+
+        <!----------------------------------- Início da segunda página ------------------------------------>
+        <section class="second-page">
+            <div class="content-second-page">
+                <div class="info-second-page">
+                    <h2>Bolsas <br> térmicas</h2>
+                    <p>Confira as bolsas do nosso kit,<br>e assim como os demais produtos elas são confeccionadas em Material vip xadrez</p>
+                </div>
+                <div class="cards-second-page">
+                    <div class="card-item-second-page">
+                        <img src="asset/img/destaques/bolsa-duo.jpg" alt="Uma mão retirando uma garrafa de uma bolsa de piquenique">
+                        <h3 class="title-card-second-page">Bolsa Duo</h3>
+                        <button>Saiba mais</button>
+                        <button>Solicite um orçamento</button>
+                    </div>
+                    <div class="card-item-second-page elementos-separadores">
+                        <img src="asset/img/destaques/bolsa-pg.jpg" alt="uma bolsa de piquinique sobre uma mesa">
+                        <h3 class="title-card-second-page">Bolsa P.G</h3>
+                        <button>Saiba mais</button>
+                        <button>Solicite um orçamento</button>
+                    </div>
+                    <div class="card-item-second-page">
+                        <img src="asset/img/destaques/termica-ger.jpg" alt="uma térmica de piquenique sobre uma mesa">
+                        <h3 class="title-card-second-page">Bolsa térmica Ger</h3>
+                        <button>Saiba mais</button>
+                        <button>Solicite um orçamento</button>
+                    </div>
+                </div> 
+            </div>
+            <video autoplay loop class="background-second-page" src="asset/video/nae-e-filha-sobre-toalha.mov"></video>
+        </section>
 
     </main>
 
