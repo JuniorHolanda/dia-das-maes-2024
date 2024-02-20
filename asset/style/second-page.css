@@ -25,9 +25,18 @@
     z-index: 1;
 }
 
+.info-second-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    width: 40%;
+    height: 100%;
+
+}
 .info-second-page h2{
     font-family: var(--font-general);
-    font-size: 6rem;
+    font-size: 5em;
     color: var(--clean-color);
     padding: 3rem 3rem 0 3rem;
     margin: 0;
@@ -35,6 +44,7 @@
     line-height: 90px;
     text-transform: uppercase;
 }
+
 
 .info-second-page p{
     font-family: var(--font-general);
@@ -46,41 +56,52 @@
 
 .cards-second-page {
     display: flex;
-    gap: 3rem;
+    width: 60%;
     z-index: 1;
     height: 90%;
 }
 
 .card-item-second-page{
     display: flex;
+    width: 33%;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: .5rem;
     z-index: 1;
-}
+    padding: 0px 1.5rem;
 
-.cards-second-page img{
+}
+.image-second-page{
     border-radius: 10px;
-    width: 200px;
+    overflow: hidden;
+    width: 2;
     transition: 0.3s;
     cursor: pointer;
+}
+.cards-second-page img {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .cards-second-page img:hover{
     scale: 103%;
     transition: 0.3s;
 }
+/*imagem que contem as bordas que separa  as 3 imagens*/
 .elementos-separadores{
     border-left: solid 3px var(--third-color-special);
     border-right: solid 3px var(--third-color-special);
-    padding: 0px 3rem ;
     
 }
 
 .title-card-second-page {
     font-family: var(--font-special);
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+    font-weight: 100;
     color: var(--clean-color);
 
 }
@@ -113,5 +134,34 @@
     object-fit: cover;
     mix-blend-mode: screen;
     
+}
+
+/*------------------------------------------------- Media Querie -------------------------------------------*/
+
+@media (max-width: 1590px) {
+
+    .info-second-page h2{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .info-second-page p{
+        font-size: 1.2rem;
+        width: 100%;
+
+    }
+    .info-second-page{
+        padding: 3rem;
+        width: 30%;
+    }
+
+    .content-second-page{
+        height: 70%;
+        width: 90%;
+    }
+
+    .cards-second-page button {
+        font-size: .8rem;
+    }
 }
 
