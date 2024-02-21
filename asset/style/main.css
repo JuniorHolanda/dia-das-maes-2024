@@ -140,7 +140,7 @@ body {
 .left-pinel-container p {
     font-family: var(--font-general);
     font-size: 1.5rem;
-    color: var(--third-color);
+    color: var(--second-color);
     width: 70%;
 }
 
