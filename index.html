@@ -21,7 +21,7 @@
             <section class="content-first-page">
 
                 <section class="left-pinel-container">
-                        <img class="logo-mm" src="asset/img/logo.png" alt="Logo da empresa Miriam Momesso">
+                        <img class="logo-mm" src="asset/img/diversas/logo.png" alt="Logo da empresa Miriam Momesso">
                         <h1>Mais que um brinde</h1>
                         <p>Sua marca presente em momentos especiais,<br> criando e fortalecendo <strong class="conxao-duradoura">conexões duradouras</strong> com seus clientes.</p>
                 </section>
@@ -37,9 +37,18 @@
                             <button id="nextButton" class="setas next-button fa-solid fa-chevron-right"></button>
             
                             <div id="slideBox" class="slide-container">
-                                <img class="slide-item" data-slide="imagens-slide" src="/asset/img/foto-principal-paisagem.jpg" alt="bolsas da miriam momesso">
-                                <img class="slide-item" data-slide="imagens-slide" src="/asset/img/foto-paisagem-bolsa-pg.jpg" alt="bolsas da miriam momesso">
-                                <img class="slide-item" data-slide="imagens-slide" src="/asset/img/foto-paisagem-bolsa-piquenique.jpg" alt="bolsas da miriam momesso">
+                                <picture>
+                                    <source media="(max-width: 500px )" srcset="asset/img/destaques/foto-principal-quadrado.jpg">
+                                    <img class="slide-item" data-slide="imagens-slide" src="/asset/img/destaques/foto-principal-paisagem.jpg" alt="bolsas da miriam momesso">
+                                </picture>
+                                <picture>
+                                    <source media="(max-width: 500px )" srcset="asset/img/destaques/bolsa-pg-quadrada.jpg">
+                                    <img class="slide-item" data-slide="imagens-slide" src="/asset/img/destaques/foto-paisagem-bolsa-pg.jpg" alt="bolsas da miriam momesso">
+                                </picture>
+                                <picture>
+                                    <source media="(max-width: 500px )" srcset="asset/img/destaques/bolsa-duo-quadrada.jpg">
+                                    <img class="slide-item" data-slide="imagens-slide" src="/asset/img/destaques/foto-paisagem-bolsa-piquenique.jpg" alt="bolsas da miriam momesso">
+                                </picture>
                             </div>
             
                             <div id="indicatorButton" class="button-indicator-container">
@@ -50,7 +59,7 @@
                         </div>
             
                         <div class="video-container">
-                            <video autoplay loop src="/asset/video/Composição 2.mp4"></video>
+                            <video controls loop src="/asset/video/Composição 2.mp4"></video>
                         </div>
 
                     </div>
@@ -83,8 +92,8 @@
                 <div class="cards-second-page">
                     <div class="card-item-second-page">
                         <picture class="image-second-page">
-                            <source media="(max-width: 1919px )" srcset="asset/img/destaques/bolsa-duo-quadrada.jpg">
-                            <source media="(max-width: 900px )" srcset="asset/img/destaques/bolsa-duo-media.jpg">
+                            <source media="(max-width: 1919px )" srcset="asset/img/destaques/bolsa-duo.jpg">
+                            <source media="(max-width: 1300px )" srcset="asset/img/destaques/bolsa-duo-media.jpg">
                             <img src="asset/img/destaques/bolsa-duo.jpg" alt="Uma mão retirando uma garrafa de uma bolsa de piquenique">
                         </picture>
                         <h3 class="title-card-second-page">Bolsa Duo</h3>
@@ -94,8 +103,9 @@
                     </div>
                     <div class="card-item-second-page elementos-separadores">
                         <picture class="image-second-page">
-                            <source media="(max-width: 1919px )" srcset="asset/img/destaques/bolsa-pg-quadrada.jpg">
-                            <source media="(max-width: 900px )" srcset="asset/img/destaques/bolsa-pg-tamanho-medio.jpg">
+                            <source media="(max-width: 1919px )" srcset="asset/img/destaques/bolsa-pg.jpg">
+                            <source media="(max-width: 1300px )" srcset="asset/img/destaques/bolsa-pg-tamanho-medio.jpg">
+                            <source media="(max-width: 600px )" srcset="asset/img/destaques/bolsa-pg-quadrada.jpg">
                             <img src="asset/img/destaques/bolsa-pg.jpg" alt="uma bolsa de piquinique sobre uma mesa">
                             
                         </picture>
@@ -106,8 +116,8 @@
                     </div>
                     <div class="card-item-second-page">
                         <picture class="image-second-page">
-                            <source media="(max-width: 1919px )" srcset="asset/img/destaques/termica-ger-quadrada.jpg">
-                            <source media="(max-width: 900px )" srcset="asset/img/destaques/.jpg">
+                            <source media="(max-width: 1919px )" srcset="asset/img/destaques/termica-ger.jpg">
+                            <source media="(max-width: 1300px )" srcset="asset/img/destaques/termica-ger-media.jpg">
                             <img src="asset/img/destaques/termica-ger.jpg" alt="uma térmica de piquenique sobre uma mesa">
                         </picture>
                         <h3 class="title-card-second-page">Bolsa térmica Ger</h3>

@@ -121,3 +121,48 @@
 .call-for-action-fourth-page button:hover{
     background-color: var(--main-color);
 }
+
+@media (max-width: 600px) {
+    
+    .container-fourth-page{
+        width: auto;
+    }
+
+    .content-fourth-page{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:auto;
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .info-fourth-page{
+
+        text-align: center;
+        padding: 3rem 0;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .info-fourth-page h2{
+        font-size: 3rem;
+    }
+    
+    .info-fourth-page h3{
+        font-size: 2rem;
+    }
+
+    .img-fourth-page{
+        width: 90%;
+        overflow: hidden;
+        
+    }
+
+    .img-fourth-page img {
+        width: 90%;
+        object-fit: contain;
+    }
+
+}

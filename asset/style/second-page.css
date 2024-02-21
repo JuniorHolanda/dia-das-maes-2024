@@ -57,9 +57,13 @@
 
 .cards-second-page {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     z-index: 1;
     height: 80%;
+    overflow: hidden;
+    border-radius: 10px;
 
 }
 
@@ -82,8 +86,8 @@
     transition: 0.3s;
     cursor: pointer;
     min-width: 167px;
-    max-width: 320px ;
-    min-height: 600px;
+    max-width: 400px ;
+    min-height: 400px;
 }
 .cards-second-page img {
     display: flex;
@@ -251,5 +255,37 @@
     }
 
     
+}
+
+@media (max-width: 600px) {
+
+    .second-page{
+        height: auto;
+        width: 100vw;
+        padding: 3rem 0;
+    }
+
+    .content-second-page{
+        height: auto;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .info-second-page h2{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .image-second-page{
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 100%;
+        transition: 0.3s;
+        cursor: pointer;
+        min-width: 167px;
+        max-width: 400px ;
+        min-height: 400px;
+    }
 }
 

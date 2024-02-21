@@ -165,8 +165,6 @@ body {
     align-items: end;
     padding-right: 3rem;
     grid-column: 3/4;
-
-    
 }
 
 .content-action {
@@ -239,4 +237,28 @@ body {
 /* mesmo usando o mesmo tamanho para os dois icones o globo ficava maior que o instagram, por isso fiz mais essa declaração, para ajustar o tamanho*/
 .social-midia-call-for-action button:nth-child(1) {
     font-size: 1.8rem;
+}
+
+@media (max-width: 600px){
+    .containner-first-page{
+        flex-direction: column;
+        height: auto;
+        padding: 3rem 0;
+    }
+
+    .content-first-page{
+        padding: 3rem 0;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    .content-action {
+        width: 90%;
+        gap: 30px;
+    }
+
 }
