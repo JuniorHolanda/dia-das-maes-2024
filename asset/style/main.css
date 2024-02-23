@@ -233,6 +233,11 @@ body {
     transition: .3s;
 }
 
+.video-mobile{
+    display: none; 
+}
+
+
 
 /* mesmo usando o mesmo tamanho para os dois icones o globo ficava maior que o instagram, por isso fiz mais essa declaração, para ajustar o tamanho*/
 .social-midia-call-for-action button:nth-child(1) {
@@ -260,5 +265,19 @@ body {
         width: 90%;
         gap: 30px;
     }
+
+    .video-mobile{
+        display: flex;
+        width: 80%;
+        border: 10px;
+        overflow: hidden;
+        border-radius: 30px;
+        margin-top: 3rem;
+    }
+
+    .video-mobile video{
+        width: 100%;
+    }
+
 
 }
