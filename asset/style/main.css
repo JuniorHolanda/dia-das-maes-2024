@@ -218,7 +218,7 @@ body {
     align-items: center;
 }
 
-.social-midia-call-for-action button {
+.social-midia-call-for-action a {
     background-color: transparent;
     border: none;
     padding: 5px;
